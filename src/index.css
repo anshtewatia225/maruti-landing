@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marutiBlue: #1d4ed8;
+  --color-darkGunmetal: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+}
