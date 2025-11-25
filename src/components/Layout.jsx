@@ -22,7 +22,7 @@ const Navbar = () => {
            <Car className="text-marutiBlue" /> MARUTI SUZUKI
         </Link>
         
-        {/* Desktop Menu */}
+        
         <div className="hidden md:flex gap-8 font-medium text-gray-600 items-center">
           <Link to="/" className="hover:text-marutiBlue transition">Home</Link>
           <Link to="/browse" className="hover:text-marutiBlue transition">Browse Cars</Link>
