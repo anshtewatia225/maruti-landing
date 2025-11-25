@@ -9,13 +9,13 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  // Redirect if no car selected
+  
   if (!selectedCar) return <Navigate to="/browse" />;
 
   const handlePayment = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API delay
+  
     setTimeout(() => {
       alert('Appointment Confirmed! Payment Successful.');
       setLoading(false);
@@ -37,10 +37,10 @@ const Checkout = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           
-          {/* LEFT COLUMN: Order Summary (Ticket Style) */}
+          {/* LEFT*/}
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-              {/* Car Image Header */}
+              
               <div className="relative h-48 bg-gray-200">
                 <img src={selectedCar.image} alt={selectedCar.name} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -64,7 +64,7 @@ const Checkout = () => {
                   </div>
                 </div>
                 
-                {/* Total */}
+                
                 <div className="pt-4 flex justify-between items-end">
                   <div>
                     <p className="text-xs text-gray-500">Booking Fee</p>
@@ -75,7 +75,7 @@ const Checkout = () => {
               </div>
             </div>
 
-            {/* Trust Badge */}
+            
             <div className="bg-blue-50 p-4 rounded-xl flex items-start gap-3">
               <ShieldCheck className="text-marutiBlue shrink-0 mt-1" />
               <div>
@@ -86,12 +86,12 @@ const Checkout = () => {
           </div>
 
 
-          {/* RIGHT COLUMN: Payment Form */}
+          {/* RIGHT*/}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
               <h2 className="text-xl font-bold text-gray-900 mb-6 pb-4 border-b border-gray-100">Payment Details</h2>
 
-              {/* Form */}
+              
               <form onSubmit={handlePayment} className="space-y-6">
                 <div className="space-y-4">
                   
@@ -155,6 +155,6 @@ const Checkout = () => {
   );
 };
 
-// (Removed local UserIcon in favor of `User` from lucide-react)
+
 
 export default Checkout;
