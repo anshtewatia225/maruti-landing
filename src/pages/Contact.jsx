@@ -12,7 +12,7 @@ const Contact = () => {
               <div className="space-y-4 text-gray-600">
                 <div className="flex gap-4">
                   <MapPin className="text-marutiBlue shrink-0" />
-                  <p>Maruti Suzuki India Limited,<br/>1, Nelson Mandela Road, Vasant Kunj,<br/>New Delhi - 110070</p>
+                  <p>Maruti Suzuki India Limited,<br/>Old Palam Road,Udyog Vihar<br/> Gurugram, Haryana - 122016</p>
                 </div>
                 <div className="flex gap-4">
                   <Phone className="text-marutiBlue shrink-0" />

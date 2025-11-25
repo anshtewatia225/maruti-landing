@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { CreditCard, Calendar, Lock, ShieldCheck, ChevronRight, MapPin } from 'lucide-react';
+import { CreditCard, Calendar, Lock, ShieldCheck, ChevronRight, MapPin, User } from 'lucide-react';
 
 const Checkout = () => {
   const selectedCar = useSelector((state) => state.booking.selectedCar);
@@ -99,7 +99,7 @@ const Checkout = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-1">Card Name</label>
                     <div className="relative">
                        <input required type="text" className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-marutiBlue focus:border-transparent outline-none transition" placeholder={user?.name} />
-                       <UserIcon className="absolute left-3 top-3.5 text-gray-400" size={18} />
+                       <User className="absolute left-3 top-3.5 text-gray-400" size={18} />
                     </div>
                   </div>
 
@@ -155,9 +155,6 @@ const Checkout = () => {
   );
 };
 
-// Helper Icon Component specifically for inside this file
-const UserIcon = ({className, size}) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-);
+// (Removed local UserIcon in favor of `User` from lucide-react)
 
 export default Checkout;

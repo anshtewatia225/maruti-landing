@@ -28,7 +28,7 @@ const Login = () => {
       
       {/* Left Side - Aesthetic Image & Brand Message */}
       <div className="hidden lg:flex w-1/2 relative bg-gray-900 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=1920')] bg-cover bg-center opacity-60"></div>
+        <div className="absolute inset-0 bg-[url('https://imgd.aeplcdn.com/370x208/n/cw/ec/147201/invicto-exterior-closed-hood-bonnet.jpeg?isig=0&q=80')] bg-cover bg-center opacity-60"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
         
         <div className="relative z-10 flex flex-col justify-between p-16 w-full text-white">

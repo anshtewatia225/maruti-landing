@@ -31,7 +31,7 @@ const Navbar = () => {
           
           {user ? (
             <div className="flex items-center gap-4 border-l pl-4 border-gray-300">
-              <span className="text-sm text-gray-900 font-bold">Hi, {user.name.split(' ')[0]}</span>
+              
               <button onClick={handleLogout} className="text-red-500 flex items-center gap-1 text-sm hover:bg-red-50 px-3 py-1 rounded-full transition">
                 <LogOut size={16}/> Logout
               </button>
@@ -42,27 +42,9 @@ const Navbar = () => {
             </Link>
           )}
         </div>
-
-        {/* Mobile Toggle */}
-        <div className="md:hidden">
-           <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? <X/> : <Menu/>}</button>
-        </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden pb-4">
-          <Link to="/" className="block py-2 text-gray-600">Home</Link>
-          <Link to="/browse" className="block py-2 text-gray-600">Browse Cars</Link>
-          <Link to="/about" className="block py-2 text-gray-600">About Us</Link>
-          <Link to="/contact" className="block py-2 text-gray-600">Contact</Link>
-          {user ? (
-             <button onClick={handleLogout} className="block w-full text-left py-2 text-red-500 font-bold">Logout</button>
-          ) : (
-             <Link to="/login" className="block py-2 text-marutiBlue font-bold">Login</Link>
-          )}
-        </div>
-      )}
+      
     </nav>
   );
 };
@@ -98,7 +80,7 @@ const Footer = () => (
         <ul className="space-y-4 text-gray-400 text-sm">
           <li className="flex items-start gap-3">
             <MapPin size={18} className="mt-1 flex-shrink-0" />
-            <span>1, Nelson Mandela Road, Vasant Kunj, New Delhi</span>
+            <span>Old Palam Road,Udyog Vihar, Gurugram</span>
           </li>
           <li className="flex items-center gap-3">
             <Phone size={18} />
