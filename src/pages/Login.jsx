@@ -13,7 +13,7 @@ const Login = () => {
   const from = location.state?.from?.pathname || "/";
 
   const onSubmit = (data) => {
-    // Simulate API
+    
     const mockUser = {
       name: "Maruti Customer",
       email: data.email,
@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex w-full">
       
-      {/* Left Side - Aesthetic Image & Brand Message */}
+      
       <div className="hidden lg:flex w-1/2 relative bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://imgd.aeplcdn.com/370x208/n/cw/ec/147201/invicto-exterior-closed-hood-bonnet.jpeg?isig=0&q=80')] bg-cover bg-center opacity-60"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
@@ -47,7 +47,7 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Right Side - Clean Modern Form */}
+      
       <div className="w-full lg:w-1/2 flex items-center justify-center bg-white p-8 md:p-16">
         <div className="max-w-md w-full space-y-8">
           
