@@ -2,13 +2,12 @@ import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { Car, User, LogOut, Phone, Mail, MapPin, Menu, X } from 'lucide-react';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../features/authSlice';
-import { useState } from 'react';
 
 const Navbar = () => {
   const user = useSelector((state) => state.auth.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
+  
 
   const handleLogout = () => {
     dispatch(logout());
